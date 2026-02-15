@@ -1,0 +1,25 @@
+{
+  "name": "vite-react-monorepo-template",
+  "version": "1.0.0",
+  "description": "Template for creating a Vite-React-Turbo monorepo. Also includes ESLint, Prettier, and TypeScript configurations.",
+  "author": {
+    "name": "Robert Rabbagast"
+  },
+  "scripts": {
+    "check-types": "turbo run check-types",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "workspaces": [
+    "config/*",
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "turbo": "^2.8.3"
+  },
+  "packageManager": "npm@11.7.0"
+}

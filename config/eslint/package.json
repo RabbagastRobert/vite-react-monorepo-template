@@ -1,0 +1,23 @@
+{
+  "name": "@repo/config-eslint",
+  "version": "1.0.0",
+  "description": "ESLint configuration for a monorepo",
+  "type": "module",
+  "exports": {
+    "./base": "./base.ts",
+    "./app": "./app.ts",
+    "./node": "./node.ts"
+  },
+  "devDependencies": {
+    "@repo/config-typescript": "*",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-turbo": "^2.8.7",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.0",
+    "jiti": "^2.6.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.55.0"
+  }
+}
